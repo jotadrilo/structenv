@@ -9,6 +9,13 @@ import (
 	"github.com/jotadrilo/structenv"
 )
 
+type Person struct {
+	Name   bool    `env:"NAME"`
+	Age    int     `env:"AGE"`
+	Height float64 `env:"HEIGHT"`
+	weight float64 `env:"WEIGHT"`
+}
+
 // Nested is an object for testing purposes
 type Nested struct {
 	Bool1     bool          `flag:"nested-bool1" env:"NESTED_BOOL1"`

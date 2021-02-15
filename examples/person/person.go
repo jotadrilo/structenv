@@ -1,10 +1,3 @@
-# structenv
-
-Set structs from environment variables in Golang.
-
-## Example
-
-```golang
 package main
 
 import (
@@ -29,14 +22,3 @@ func main() {
 	}
 	fmt.Printf("#2 %s (%.1fkg, %.1fm) is %d years old\n", p.Name, p.Weight, p.Height, p.Age)
 }
-```
-
-```shell
-$ go run ./person.go
-#1 Bob (76.800000kg, 1.750000m) is 45 years old
-#2 Bob (76.800000kg, 1.750000m) is 45 years old
-
-$ NAME=Alice AGE=45 HEIGHT=1.67 WEIGHT=62 go run ./person.go
-#1 Bob (76.8kg, 1.8m) is 45 years old
-#2 Alice (62.0kg, 1.7m) is 45 years old
-```
