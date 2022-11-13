@@ -1,6 +1,6 @@
 module github.com/jotadrilo/structenv
 
-go 1.15
+go 1.19
 
 require (
 	github.com/fatih/structtag v1.2.0
